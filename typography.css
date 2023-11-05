@@ -1,0 +1,129 @@
+/* one-off --------------------------------------------------------------------- */
+.typography__title {
+  font-family: "Rubik", sans-serif;
+  font-size: 32px;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-orange8);
+  margin: 0;
+}
+.typography__subtitle {
+  font-family: "Rubik", sans-serif;
+  font-size: 24px;
+  color: var(--color-black);
+  margin: 0;
+}
+
+/* alpha -------------------------------------------------------------------- */
+.typography__alpha {
+  font-family: "Rubik", sans-serif;
+  font-size: var(--font-size-md);
+}
+
+.typography__alpha--bold {
+  font-family: "Rubik", sans-serif;
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+}
+
+.typography__alpha--caps {
+  font-family: "Rubik", sans-serif;
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+}
+
+.typography__alpha--bold-link {
+  font-family: "Rubik", sans-serif;
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-blue6);
+  cursor: pointer;
+  &:hover {
+    filter: brightness(125%);
+  }
+}
+
+.typography__alpha--quote {
+  font-family: "Rubik", sans-serif;
+  font-size: var(--font-size-md);
+  font-style: italic;
+  font-weight: var(--font-weight-light);
+  color: var(--color-blue6);
+}
+
+.typography__alpha--light {
+  font-family: "Rubik", sans-serif;
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-light);
+  color: var(--color-blue6);
+}
+
+/* beta ----------------------------------------------------------------------*/
+.typography__beta {
+  font-family: "Rubik", sans-serif;
+  font-size: var(--font-size-lg);
+  &.neutral,
+  .typography__beta--bold-link {
+    color: var(--color-neutral8);
+  }
+}
+
+.typography__beta--bold {
+  font-family: "Rubik", sans-serif;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+}
+
+.typography__beta--bold-link {
+  font-family: "Rubik", sans-serif;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  border-bottom: 2px solid;
+  padding-bottom: 1px;
+  margin-bottom: -2.5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.typography__beta--caps {
+  font-family: "Rubik", sans-serif;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+}
+
+/* charlie ------------------------------------------------------------------ */
+.typography__charlie {
+  font-family: "Merriweather", sans;
+  font-size: var(--font-size-lg);
+  text-align: center;
+  &.orange10 {
+    color: var(--color-orange10);
+  }
+  &.blue6 {
+    color: var(--color-blue6);
+  }
+  &.blue8 {
+    color: var(--color-blue8);
+  }
+  &.neutral8 {
+    color: var(--color-neutral8);
+  }
+}
+
+.typography__hero {
+  font-family: "Merriweather", sans;
+  font-size: var(--font-size-xxl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-blue6);
+}
+
+.form-label {
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+  color: white;
+}
