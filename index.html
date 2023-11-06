@@ -3,13 +3,14 @@
 <head>
   <title>The Hubb — Helping us be better</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <link rel="shortcut icon" type="image/png" href="logo.png" />
+  <link rel="shortcut icon" type="image/png" href="favicon.ico" />
   <link rel='stylesheet' href='normalize.css' />
   <link rel='stylesheet' type='text/css' href='Gilroy.css' />
   <link rel='stylesheet' type='text/css' href='Recoleta.css' />
   <link rel='stylesheet' href='style.css' />
   <link rel='stylesheet' href='typography.css' />
   <link rel='stylesheet' href='tiles.css' />
+  <link rel='stylesheet' href='popup.css' />
 
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Rubik:ital,wght@0,300;0,400;0,700;1,300&display=swap');
@@ -129,7 +130,6 @@
       </div>
     </div>
     <!-- FOOTER --------------------------------------------------------------->
-
     <div class="section section--CTA">
       <div class="grid grid__fullplus">
         <div class="grid grid__full--subgrid">
@@ -158,6 +158,18 @@
               see.
             </p>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EMAIL POPUP ---------------------------------------------------------->
+    <div id="popup">
+      <div class="popup__scrim" id="popup__scrim">
+        <a class="popup__close-text" id="close-button">close</a>
+        <div class="popup">
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSdZL6qXjuJji_QOuE0JzfEuEf3iODtWtdT8xI5v5GIX7Snsjw/viewform?embedded=true"
+            width="600" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </div>
       </div>
     </div>

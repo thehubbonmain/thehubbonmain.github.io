@@ -16,6 +16,7 @@
   --color-neutral2: #faf5ea;
   --color-black: #1e1e1e;
   --color-white: #ffffff;
+  --color-google-blue: #3f51b5;
 
   --font-size-xxl: 32px;
   --font-size-lg: 22px;
@@ -24,6 +25,10 @@
   --font-weight-bold: 700;
   --font-weight-regular: 400;
   --font-weight-light: 300;
+}
+
+body {
+  position: relative;
 }
 
 h1,
