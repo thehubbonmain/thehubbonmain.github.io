@@ -88,6 +88,7 @@
 .typography__beta {
   font-family: "Rubik", sans-serif;
   font-size: var(--font-size-lg);
+  line-height: 1.4;
   @media (max-width: 800px) {
     font-size: var(--font-size-md);
   }
@@ -117,6 +118,9 @@
   text-decoration: none;
   @media (max-width: 800px) {
     font-size: var(--font-size-sm);
+    border-bottom: 1px solid;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
   }
 }
 

@@ -139,6 +139,9 @@ a {
     width: 100%;
     display: grid;
     row-gap: 48px;
+    @media (max-width: 800px) {
+      row-gap: 24px;
+    }
     & .typography__hero {
       grid-column: 1 / span 6;
     }
