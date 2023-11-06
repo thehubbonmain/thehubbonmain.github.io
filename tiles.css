@@ -1,8 +1,11 @@
 .tile-wrapper {
   grid-template-columns: repeat(6, 1fr);
   display: grid;
-  grid-template-rows: 140px 140px;
+  grid-template-rows: repeat(2, max-content);
   gap: 16px;
+  @media (max-width: 800px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .tile {
@@ -16,7 +19,9 @@
   padding: 16px;
   border-radius: 8px;
   color: white;
-
+  @media (max-width: 800px) {
+    height: calc(100px - 32px);
+  }
   &.tile--span2 {
     grid-column: span 2;
   }

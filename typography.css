@@ -5,24 +5,36 @@
   font-weight: var(--font-weight-bold);
   color: var(--color-orange8);
   margin: 0;
+  @media (max-width: 800px) {
+    font-size: var(--font-size-md);
+  }
 }
 .typography__subtitle {
   font-family: "Rubik", sans-serif;
   font-size: 24px;
   color: var(--color-black);
   margin: 0;
+  @media (max-width: 800px) {
+    font-size: var(--font-size-sm);
+  }
 }
 
 /* alpha -------------------------------------------------------------------- */
 .typography__alpha {
   font-family: "Rubik", sans-serif;
   font-size: var(--font-size-md);
+  @media (max-width: 800px) {
+    font-size: var(--font-size-sm);
+  }
 }
 
 .typography__alpha--bold {
   font-family: "Rubik", sans-serif;
   font-size: var(--font-size-md);
   font-weight: var(--font-weight-bold);
+  @media (max-width: 800px) {
+    font-size: var(--font-size-sm);
+  }
 }
 
 .typography__alpha--caps {
@@ -31,6 +43,9 @@
   font-weight: var(--font-weight-bold);
   text-transform: uppercase;
   letter-spacing: 2.4px;
+  @media (max-width: 800px) {
+    font-size: var(--font-size-sm);
+  }
 }
 
 .typography__alpha--bold-link {
@@ -42,6 +57,9 @@
   &:hover {
     filter: brightness(125%);
   }
+  @media (max-width: 800px) {
+    font-size: var(--font-size-sm);
+  }
 }
 
 .typography__alpha--quote {
@@ -49,7 +67,11 @@
   font-size: var(--font-size-md);
   font-style: italic;
   font-weight: var(--font-weight-light);
+  line-height: 1.4;
   color: var(--color-blue6);
+  @media (max-width: 800px) {
+    font-size: var(--font-size-sm);
+  }
 }
 
 .typography__alpha--light {
@@ -57,12 +79,18 @@
   font-size: var(--font-size-md);
   font-weight: var(--font-weight-light);
   color: var(--color-blue6);
+  @media (max-width: 800px) {
+    font-size: var(--font-size-sm);
+  }
 }
 
 /* beta ----------------------------------------------------------------------*/
 .typography__beta {
   font-family: "Rubik", sans-serif;
   font-size: var(--font-size-lg);
+  @media (max-width: 800px) {
+    font-size: var(--font-size-md);
+  }
   &.neutral,
   .typography__beta--bold-link {
     color: var(--color-neutral8);
@@ -73,6 +101,9 @@
   font-family: "Rubik", sans-serif;
   font-size: var(--font-size-lg);
   font-weight: var(--font-weight-bold);
+  @media (max-width: 800px) {
+    font-size: var(--font-size-md);
+  }
 }
 
 .typography__beta--bold-link {
@@ -84,6 +115,9 @@
   margin-bottom: -2.5px;
   cursor: pointer;
   text-decoration: none;
+  @media (max-width: 800px) {
+    font-size: var(--font-size-sm);
+  }
 }
 
 .typography__beta--caps {
@@ -92,6 +126,9 @@
   font-weight: var(--font-weight-bold);
   text-transform: uppercase;
   letter-spacing: 2.4px;
+  @media (max-width: 800px) {
+    font-size: var(--font-size-md);
+  }
 }
 
 /* charlie ------------------------------------------------------------------ */
@@ -99,6 +136,9 @@
   font-family: "Merriweather", sans;
   font-size: var(--font-size-lg);
   text-align: center;
+  @media (max-width: 800px) {
+    font-size: var(--font-size-md);
+  }
   &.orange10 {
     color: var(--color-orange10);
   }
@@ -118,6 +158,9 @@
   font-size: var(--font-size-xxl);
   font-weight: var(--font-weight-bold);
   color: var(--color-blue6);
+  @media (max-width: 800px) {
+    font-size: var(--font-size-lg);
+  }
 }
 
 .form-label {

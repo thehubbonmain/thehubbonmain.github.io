@@ -21,6 +21,7 @@
   --font-size-xxl: 32px;
   --font-size-lg: 22px;
   --font-size-md: 18px;
+  --font-size-sm: 14 px;
 
   --font-weight-bold: 700;
   --font-weight-regular: 400;
@@ -47,26 +48,43 @@ a {
 }
 
 .grid__fullplus {
+  width: 100%;
   max-width: 1036px;
   margin: 0 100px;
   grid-template-columns: 100px repeat(6, 1fr);
 
+  @media (max-width: 800px) {
+    grid-template-columns: 32px repeat(3, 1fr);
+  }
   & > * {
     grid-column: 2 / span 6;
+    @media (max-width: 800px) {
+      grid-column: 2 / span 3;
+    }
   }
 }
 
 .grid__full--subgrid {
   grid-template-columns: repeat(6, 1fr);
+  @media (max-width: 800px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .grid__two-thirds {
   grid-column: span 4;
+  @media (max-width: 800px) {
+    grid-column: span 3;
+  }
 }
 
 .grid__two-thirds--subgrid {
   grid-column: span 4;
   grid-template-columns: repeat(4, 1fr);
+  @media (max-width: 800px) {
+    grid-column: span 3;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .grid__half {
@@ -89,13 +107,13 @@ a {
 
 /* layout ------------------------------------------------------------------- */
 .section {
-  width: 100vw;
+  width: calc(100vw - 48px);
   display: grid;
   justify-items: center;
   align-content: center;
 
   background-color: white;
-  padding: 24px 0;
+  padding: 24px;
 }
 
 .section--CTA {
@@ -108,41 +126,47 @@ a {
   }
   & .button {
     justify-self: end;
+    @media (max-width: 800px) {
+      justify-self: unset;
+    }
   }
 }
 
 .section--hero {
-  padding: 64px 0 80px 0;
+  padding: 64px 24px 80px 24px;
   background-color: var(--color-neutral4);
   & .hero-inner {
     width: 100%;
     display: grid;
-    gap: 48px;
+    row-gap: 48px;
     & .typography__hero {
       grid-column: 1 / span 6;
     }
   }
+  @media (max-width: 800px) {
+    padding: 32px 24px 40px 24px;
+  }
 }
 .quote {
+  width: calc(100% - 24px);
   padding-left: 16px;
   border-left: 8px solid var(--color-blue6);
 }
 
 .section--funding-note {
   background-color: var(--color-white);
-  padding: 40px 0 0 0;
+  padding: 40px 24px 0 24px;
 }
 .section--tiles {
   background-color: var(--color-white);
-  padding: 40px 0;
+  padding: 40px 24px;
 }
-/* wrappers ------------ */
 
+/* wrappers ----------------------------------------------------------------- */
 .bodyWrapper {
   width: 100vw;
   justify-items: center;
   align-content: center;
-  background-color: green;
 }
 
 .title-wrapper {
@@ -152,6 +176,9 @@ a {
   align-content: end;
   height: 100px;
   margin: 0;
+  @media (max-width: 800px) {
+    height: unset;
+  }
 }
 
 .links-wrapper {
@@ -166,9 +193,13 @@ a {
   & > p {
     display: block;
   }
+  @media (max-width: 800px) {
+    grid-column: 1 / span 3;
+    justify-content: start;
+  }
 }
 
-/* elements ------ */
+/* elements ----------------------------------------------------------------- */
 .logo {
   position: fixed;
   top: 24px;
@@ -176,6 +207,10 @@ a {
   grid-column: 1 / span 1;
   width: 100px;
   height: 100px;
+  @media (max-width: 800px) {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 .button {
