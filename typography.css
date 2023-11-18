@@ -28,6 +28,20 @@
   }
 }
 
+.typography__alpha--link {
+  font-family: "Rubik", sans-serif;
+  font-size: var(--font-size-md);
+  border-bottom: 2px solid;
+  padding-bottom: 1px;
+  margin-bottom: -2.5px;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  @media (max-width: 800px) {
+    font-size: var(--font-size-sm);
+  }
+}
+
 .typography__alpha--bold {
   font-family: "Rubik", sans-serif;
   font-size: var(--font-size-md);

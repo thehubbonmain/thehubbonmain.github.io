@@ -235,8 +235,6 @@ a {
   top: 24px;
   z-index: 10;
   grid-column: 1 / span 1;
-  width: 100px;
-  height: 100px;
   & > img {
     width: 100px;
     height: 100px;
