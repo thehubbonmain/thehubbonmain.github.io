@@ -120,6 +120,7 @@ a {
   background-color: var(--color-blue8);
   color: var(--color-white);
   position: sticky;
+  top: 0;
 
   & .grid__full--subgrid {
     justify-content: space-between;
@@ -156,6 +157,11 @@ a {
   border-left: 8px solid var(--color-blue6);
 }
 
+.section--news {
+  background-color: var(--color-white);
+  padding: 40px 24px;
+}
+
 .section--funding-note {
   background-color: var(--color-white);
   padding: 40px 24px 0 24px;
@@ -163,6 +169,21 @@ a {
 .section--tiles {
   background-color: var(--color-white);
   padding: 40px 24px;
+}
+
+.section--footer {
+  background-color: var(--color-blue8);
+  color: var(--color-white);
+
+  & .grid__full--subgrid {
+    justify-content: space-between;
+  }
+  & .button {
+    justify-self: end;
+    @media (max-width: 800px) {
+      justify-self: unset;
+    }
+  }
 }
 
 /* wrappers ----------------------------------------------------------------- */
@@ -193,9 +214,15 @@ a {
   grid-template-columns: max-content max-content;
 
   grid-column: 4 / span 3;
-  & > p {
-    display: block;
+
+  & > a {
+    color: black;
+
+    &:hover {
+      color: var(--color-blue6);
+    }
   }
+
   @media (max-width: 800px) {
     grid-column: 1 / span 3;
     justify-content: start;
@@ -210,9 +237,15 @@ a {
   grid-column: 1 / span 1;
   width: 100px;
   height: 100px;
+  & > img {
+    width: 100px;
+    height: 100px;
+  }
   @media (max-width: 800px) {
-    width: 32px;
-    height: 32px;
+    & > img {
+      width: 32px;
+      height: 32px;
+    }
   }
 }
 
@@ -230,4 +263,8 @@ a {
     background-color: var(--color-blue4);
     cursor: pointer;
   }
+}
+
+.news-image {
+  width: 100%;
 }
