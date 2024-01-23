@@ -21,7 +21,7 @@
   --font-size-xxl: 32px;
   --font-size-lg: 22px;
   --font-size-md: 18px;
-  --font-size-sm: 14 px;
+  --font-size-sm: 14px;
 
   --font-weight-bold: 700;
   --font-weight-regular: 400;
@@ -166,6 +166,7 @@ a {
   background-color: var(--color-white);
   padding: 40px 24px 0 24px;
 }
+
 .section--tiles {
   background-color: var(--color-white);
   padding: 40px 24px;

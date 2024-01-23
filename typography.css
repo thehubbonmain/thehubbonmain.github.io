@@ -23,6 +23,7 @@
 .typography__alpha {
   font-family: "Rubik", sans-serif;
   font-size: var(--font-size-md);
+  line-height: 1.4;
   @media (max-width: 800px) {
     font-size: var(--font-size-sm);
   }
