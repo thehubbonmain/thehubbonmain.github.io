@@ -267,3 +267,12 @@ a {
 .news-image {
   width: 100%;
 }
+
+.social-icons {
+  display: flex;
+  gap: 16px;
+  height: 30px;
+  @media (max-width: 800px) {
+    gap: 24px;
+  }
+}
